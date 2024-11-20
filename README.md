@@ -1,104 +1,29 @@
-<!--bati:start section="document"-->
+# Helmi Labs
 
-<!--bati:start section="intro"-->
+Welcome to my personal laboratory! This repository serves as a playground for my technical explorations and experiments with various web technologies. Here, I document my journey of learning and building interesting features that I'm curious about.
 
-Generated with [Bati](https://batijs.dev) ([version 306](https://www.npmjs.com/package/create-bati/v/0.0.306)) using this command:
+## Current Experiment: Face Recognition & Expression Detection
 
-```sh
-pnpm create bati --react --tailwindcss --shadcn-ui
-```
+My current exploration focuses on implementing face recognition and expression detection in web applications. I was curious about how to leverage machine learning capabilities directly in the browser, which led me to experiment with face-api.js and TensorFlow.js.
 
-<!--bati:start section="TOC"-->
+### What I'm Learning
 
-## Contents
+- How to process real-time video streams in the browser
+- Implementation of machine learning models in client-side JavaScript
+- Face detection and expression analysis using neural networks
+- Privacy-focused approaches to sensitive data processing
 
-* [React](#react)
+### Features Built So Far
 
-  * [`/pages/+config.ts`](#pagesconfigts)
-  * [Routing](#routing)
-  * [`/pages/_error/+Page.jsx`](#pages_errorpagejsx)
-  * [`/pages/+onPageTransitionStart.ts` and `/pages/+onPageTransitionEnd.ts`](#pagesonpagetransitionstartts-and-pagesonpagetransitionendts)
-  * [SSR](#ssr)
-  * [HTML Streaming](#html-streaming)
+- Real-time face detection
+- Facial expression recognition
+- Face landmark detection
 
-* [shadcn/ui](#shadcnui)
+## Tech Stack & Libraries Used
 
-  * [Configuration](#configuration)
-  * [Add Components to Your Project](#add-components-to-your-project)
-
-<!--bati:end section="TOC"-->
-
-<!--bati:end section="intro"-->
-
-<!--bati:start section="features"-->
-
-<!--bati:start category="UI Framework" flag="react"-->
-
-## React
-
-This app is ready to start. It's powered by [Vike](https://vike.dev) and [React](https://react.dev/learn).
-
-### `/pages/+config.ts`
-
-Such `+` files are [the interface](https://vike.dev/config) between Vike and your code. It defines:
-
-* A default [`<Layout>` component](https://vike.dev/Layout) (that wraps your [`<Page>` components](https://vike.dev/Page)).
-* A default [`title`](https://vike.dev/title).
-* Global [`<head>` tags](https://vike.dev/head-tags).
-
-### Routing
-
-[Vike's built-in router](https://vike.dev/routing) lets you choose between:
-
-* [Filesystem Routing](https://vike.dev/filesystem-routing) (the URL of a page is determined based on where its `+Page.jsx` file is located on the filesystem)
-* [Route Strings](https://vike.dev/route-string)
-* [Route Functions](https://vike.dev/route-function)
-
-### `/pages/_error/+Page.jsx`
-
-The [error page](https://vike.dev/error-page) which is rendered when errors occur.
-
-### `/pages/+onPageTransitionStart.ts` and `/pages/+onPageTransitionEnd.ts`
-
-The [`onPageTransitionStart()` hook](https://vike.dev/onPageTransitionStart), together with [`onPageTransitionEnd()`](https://vike.dev/onPageTransitionEnd), enables you to implement page transition animations.
-
-### SSR
-
-SSR is enabled by default. You can [disable it](https://vike.dev/ssr) for all your pages or only for some pages.
-
-### HTML Streaming
-
-You can enable/disable [HTML streaming](https://vike.dev/stream) for all your pages, or only for some pages while still using it for others.
-
-<!--bati:end category="UI Framework" flag="react"-->
-
-<!--bati:start category="UI Component Libraries" flag="shadcn-ui"-->
-
-## shadcn/ui
-
-Beautifully designed components that you can copy and paste into your apps. Accessible. Customizable. Open Source.
-
-### Configuration
-
-see [shadcn/ui theming](https://ui.shadcn.com/docs/theming)
-
-Base Configuration can be found in `components.json` file.
-
-> \[!NOTE]
-> changes to the `components.json` file **will not** be reflected in existing components. Only new components will be affected.
-
-### Add Components to Your Project
-
-**Example:** add a component to your project.
-`pnpm shadcn add button`
-
-use the `<Button />` component in your project:
-`import { Button } from "@/components/ui/button";`
-
-more [shadcn/ui components](https://ui.shadcn.com/docs/components/accordion)
-
-<!--bati:end category="UI Component Libraries" flag="shadcn-ui"-->
-
-<!--bati:end section="features"-->
-
-<!--bati:end section="document"-->
+- React
+- TypeScript
+- face-api.js & TensorFlow.js
+- Vite + Vike
+- Tailwind CSS
+- Tanstack Query
