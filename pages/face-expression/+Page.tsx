@@ -70,7 +70,7 @@ const FaceRecognitionApp = () => {
   }, [isModelsLoaded, stream]);
 
   return (
-    <article className="flex flex-col items-center sm:px-5 mt-4 lg:mt-8 prose-sm lg:prose mx-auto">
+    <article className="flex flex-col items-center sm:px-5 mt-4 lg:mt-8 prose-sm mx-auto">
       <div className="flex flex-col w-full lg:max-w-[580px]">
         <h1 className="text-stone-700 !mb-0 font-serif">
           Face Expression Recognition

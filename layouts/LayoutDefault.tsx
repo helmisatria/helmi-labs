@@ -31,7 +31,7 @@ export default function LayoutDefault({
             <Content>{children}</Content>
           </div>
           <div
-            className="relative 2xl:pr-20 w-96 xl:w-full h-screen hidden xl:block max-h-screen"
+            className="relative w-80 xl:w-full h-screen hidden xl:block max-h-screen"
             style={{
               backgroundImage: `url(${bgUrl})`,
             }}

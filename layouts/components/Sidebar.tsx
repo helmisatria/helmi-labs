@@ -18,7 +18,7 @@ export function Sidebar({ className }: { className?: string }) {
     <div
       id="sidebar"
       className={cn(
-        "lg:py-5 w-full lg:items-end lg:pr-14 xl:pr-20 flex relative flex-col",
+        "lg:py-5 w-full lg:items-end lg:pr-8 flex relative flex-col",
         className
       )}
       style={{ backgroundImage: `url(${bgUrl})` }}
@@ -58,7 +58,7 @@ export function Sidebar({ className }: { className?: string }) {
             EXPERIMENTS
           </Link>
 
-          <ul className="flex px-5 overflow-auto flex-row gap-x-3 mt-1 lg:mt-4 lg:flex-col gap-y-1 font-serif tracking-tighter text-sm lg:text-xl">
+          <ul className="flex px-5 overflow-auto flex-row gap-x-3 mt-1 lg:mt-4 lg:flex-col gap-y-1.5 font-serif tracking-tighter text-sm lg:text-xl">
             {navigations.map((item) => (
               <li key={item.href} className="shrink-0">
                 <Link
