@@ -60,7 +60,17 @@ function Content({ children }: { children: React.ReactNode }) {
       }}
     >
       <div id="page-content" className="p-5 pb-12">
-        {children}
+        <div className="absolute top-0 left-0 w-full h-[190px]">
+          <img
+            src="/bg-article.png"
+            alt=""
+            height={190}
+            width="100%"
+            className="absolute h-[190px]"
+          />
+          <div className="absolute top-0 left-0 w-full h-[190px] bg-gradient-to-b from-[rgba(253,249,233,0)] to-[#FAF8F0]"></div>
+        </div>
+        <div className="relative z-10">{children}</div>
       </div>
     </main>
   );

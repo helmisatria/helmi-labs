@@ -2,6 +2,17 @@ import { cn } from "@/lib/utils";
 import bgUrl from "@/assets/bg.png";
 import { Link } from "@/components/Link";
 
+const navigations = [
+  {
+    name: "Face Matching Recognition",
+    href: "/face-matching",
+  },
+  {
+    name: "Face Expression Recognition",
+    href: "/face-expression",
+  },
+];
+
 export function Sidebar({ className }: { className?: string }) {
   return (
     <div
@@ -15,14 +26,14 @@ export function Sidebar({ className }: { className?: string }) {
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b to-80% from-[rgba(253,249,233,0)] to-[#FEFAEA]"></div>
       <div className="relative">
         <div className="px-5">
-          <p className="flex items-center gap-x-1 mt-8">
+          <a href="/" className="flex items-center gap-x-1 mt-8">
             <span className="w-3 h-3">
               <img src={"/favicon.png"} alt="icon" width={12} height={12} />
             </span>
             <span className="text-sm font-serif tracking-tight text-amber-800">
               Helmi Labs
             </span>
-          </p>
+          </a>
 
           <h2 className="lg:text-4xl text-2xl font-serif tracking-tight text-stone-700 mt-3 lg:mt-12">
             Helmi Satria.
@@ -45,16 +56,7 @@ export function Sidebar({ className }: { className?: string }) {
           </p>
 
           <ul className="flex px-5 overflow-auto flex-row gap-x-3 mt-1 lg:mt-4 lg:flex-col gap-y-1 font-serif tracking-tighter text-sm lg:text-lg">
-            {[
-              {
-                name: "Face Recognition",
-                href: "/",
-              },
-              {
-                name: "Face Expression Detection",
-                href: "/face-expression",
-              },
-            ].map((item) => (
+            {navigations.map((item) => (
               <li key={item.href} className="shrink-0">
                 <Link
                   href={item.href}
