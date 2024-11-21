@@ -26,19 +26,19 @@ export function Sidebar({ className }: { className?: string }) {
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b to-80% from-[rgba(253,249,233,0)] to-[#FEFAEA]"></div>
       <div className="relative">
         <div className="px-5">
-          <a href="/" className="flex items-center gap-x-1 mt-8">
+          <Link href="/" className="items-center inline-flex gap-x-1 mt-8">
             <span className="w-3 h-3">
               <img src={"/favicon.png"} alt="icon" width={12} height={12} />
             </span>
             <span className="text-sm font-serif tracking-tight text-amber-800">
               Helmi Labs
             </span>
-          </a>
+          </Link>
 
           <h2 className="lg:text-4xl text-2xl font-serif tracking-tight text-stone-700 mt-3 lg:mt-12">
             Helmi Satria.
           </h2>
-          <p className="text-xs text-stone-500 mt-1">
+          <p className="text-sm text-stone-600 mt-1">
             Experienced Software Engineer, <br /> currently{" "}
             <a
               href="https://www.linkedin.com/in/helmisatria"
@@ -51,18 +51,21 @@ export function Sidebar({ className }: { className?: string }) {
         </div>
 
         <nav className="lg:mt-[8.75rem] mt-6">
-          <p className="px-5 text-[0.5rem] tracking-[0.16rem] font-bold text-stone-400">
+          <Link
+            href="/"
+            className="px-5 text-[0.5rem] tracking-[0.16rem] font-bold text-stone-400"
+          >
             EXPERIMENTS
-          </p>
+          </Link>
 
-          <ul className="flex px-5 overflow-auto flex-row gap-x-3 mt-1 lg:mt-4 lg:flex-col gap-y-1 font-serif tracking-tighter text-sm lg:text-lg">
+          <ul className="flex px-5 overflow-auto flex-row gap-x-3 mt-1 lg:mt-4 lg:flex-col gap-y-1 font-serif tracking-tighter text-sm lg:text-xl">
             {navigations.map((item) => (
               <li key={item.href} className="shrink-0">
                 <Link
                   href={item.href}
                   className="data-[active]:text-stone-950 text-stone-500 relative group flex items-center"
                 >
-                  <div className="absolute group-data-[active]:opacity-100 opacity-0 left-0 w-full -bottom-px lg:bottom-auto lg:-left-4 rounded-full h-[3px] lg:w-[3px] lg:h-[22px] bg-amber-800"></div>
+                  <div className="absolute group-data-[active]:opacity-100 opacity-0 left-0 w-full -bottom-px lg:bottom-auto lg:-left-3 rounded-full h-[3px] lg:w-[3px] lg:h-[22px] bg-amber-800"></div>
                   {item.name}
                 </Link>
               </li>
